@@ -1,0 +1,424 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s1",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s1",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "Let $H_S=\\diag(E_0,\\ldots,E_3)$ with strictly increasing energies. Let\n$\\ket\\psi=\\sum_k\\alpha_k\\ket k$ with $\\alpha_k\\ne0$ for every $k$.\nIf a map of the form \\eqref{eq:thermal} preserves the populations of\n$\\ket\\psi\\bra\\psi$, then its output has entries\n\\begin{equation}\n\\mathcal T(\\ket\\psi\\bra\\psi)_{jk}\n=\\alpha_j\\overline{\\alpha_k}\\,g^{-1}\\Tr(V_jV_k^\\dagger)\n\\end{equation}\nfor four $g\\times g$ unitary matrices $V_0,\\ldots,V_3$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s10",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s10",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s10",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "Under distinct-level and distinct-positive-gap assumptions, the minimum\nsystem dimension admitting a cooling transition outside the closure of\nfinite ground-space thermal outputs is four.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s2",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s2",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "The cooling transition \\eqref{eq:data}--\\eqref{eq:kraus} has no realization\nof the form \\eqref{eq:thermal}, for any finite ancilla Hamiltonian or ground\ndegeneracy.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s3",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s3",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "For any four $g\\times g$ unitaries, $g\\geq1$, their correlation matrix\n$D_{jk}=g^{-1}\\Tr(V_jV_k^\\dagger)$ satisfies\n$\\max_{j,k}|D_{jk}-C_{jk}|\\geq1/144$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s4",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "For the data \\eqref{eq:data}, every output $\\tau=\\mathcal T(\\rho)$\nof \\eqref{eq:thermal} satisfies $\\|\\tau-\\sigma\\|_1>10^{-8}$.\nIn particular, $\\sigma$ is outside the closure of these thermal outputs.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s5",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "For a finite Gibbs bath with excited-state probability $p$, every\nenergy-conserving output $\\tau$ on the input \\eqref{eq:data} satisfies\n$\\|\\tau-\\sigma\\|_1>10^{-8}-2p$.\nAn exact realization therefore requires $p>5\\cdot10^{-9}$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s6",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "Replace $3/5,4/5$ in $B$ by any real $a,b>0$ with $a^2+b^2=1$, replace\n$i$ in its last entry by $e^{i\\theta}$ with $\\sin\\theta\\ne0$, and replace\n$\\ket+$ by any normalized $\\sum_j\\alpha_j\\ket j$ with all $\\alpha_j\\ne0$.\nFor every strictly ordered four-level spectrum, the resulting diagonal\ncooling channel sends this input to a state that no exact finite\nground-space thermal operation reaches.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s7",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "For every finite system with distinct ordered energies and every pure\ninput with at least four nonzero energy amplitudes, there is a diagonal\ncooling channel whose output lies outside the closure of outputs of\n\\eqref{eq:thermal}.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s8",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s8",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "Conjecture 2 of arXiv:1409.7740v1 and v2 (Supplementary Sec.\\ II F,\np.\\ S11) is false already for three vectors in $\\mathbb C^3$.\nProperty S2.6 in version 3, with its rank-dimensional ground-space\nvectors, fails for the rank-two matrix $C$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s9",
+      "contributor": null,
+      "identity": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s9",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+      },
+      "lineage": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:s9",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\diag": "\\operatorname{diag}",
+        "\\ket": "\\lvert #1\\rangle"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+      "scope": "in_scope",
+      "statement": "The channel \\eqref{eq:kraus} is outside the closed convex hull of\noptimally coherent cooling channels.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+      "toolchain": null,
+      "version": 3,
+      "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+    }
+  ]
+}

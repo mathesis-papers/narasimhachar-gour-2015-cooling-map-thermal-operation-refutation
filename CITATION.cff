@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-14"
+version: "3"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation?version=3"
+license: "CC-BY-4.0"

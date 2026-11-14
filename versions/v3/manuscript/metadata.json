@@ -1,0 +1,23 @@
+{
+  "id": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+  "revision": 3,
+  "problem_ids": [
+    "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+  ],
+  "topic": "Narasimhachar–Gour, arXiv:1409.7740v3, Supplementary Sec. S2 F, Conjecture 1, p. S11: finite ground-space thermal transitions and their closure",
+  "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+  "creators": [
+    {
+      "name": "Haobo Ma",
+      "affiliation": "ChronoAI Pte Ltd, Singapore"
+    },
+    {
+      "name": "Wenlin Zhang",
+      "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"
+    }
+  ],
+  "abstract": "Extending Maestro's exact qutrit separation (2026) by the unitary-moment obstruction of Dykema and Juschenko (2009), we refute Conjecture 1 of Narasimhachar and Gour (arXiv:1409.7740v3, Supplementary Sec. S2 F, p. S11) even in the closure of finite ground-space thermal transitions. Two diagonal Kraus operators send the uniform pure state of a four-level system with energies 0, 1, 3, 7 to a rank-two state with the same populations. Any energy-conserving realization with an ancilla initially maximally mixed on its full ground eigenspace would express the output correlation matrix as normalized traces of four unitaries. Two linear relations make that representation impossible, with a dimension-independent gap. The trace-norm error of any such thermal output exceeds 10^-8. A three-vector projection obstruction also refutes Conjecture 2 in versions 1 and 2 of the posing source. The four-level obstruction extends to every system with at least four occupied distinct energy levels. Together with the known qutrit closure theorem, this makes four the minimum dimension for closure separation under distinct-level and distinct-gap assumptions.",
+  "summary": "The explicit four-level transition is separated from every finite full-ground-space thermal output by trace-norm error greater than 10^-8. The unitary-moment gap is at least 1/144. Together with Maestro's qutrit closure theorem, this gives the minimum dimension four for closure separation under generic spectrum assumptions. Written corollaries refute the earlier unitary-family conjecture using three vectors, exclude the closed convex hull of optimally coherent cooling channels, and extend closure separation to any pure input with four occupied distinct levels. The pinned Lean declaration proves the concrete exact-transition refutation; quantitative bounds and sibling consequences have written proofs, and the finite checker covers rational identities and constants.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+}

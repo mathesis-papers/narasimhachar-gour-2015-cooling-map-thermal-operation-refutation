@@ -1,0 +1,62 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 103012,
+      "matches_public": null,
+      "path": "paper.pdf",
+      "public_sha256": null,
+      "sha256": "3567c8c170be766be683a3af63dbfabc336094af604e1f4c285b08d060297162"
+    },
+    "source": {
+      "bytes": 15951,
+      "matches_public": null,
+      "path": "source.archive",
+      "public_sha256": null,
+      "sha256": "60795e9521b046dba2e73d47f9ccf7764e68a01890633c724d29f9e3d9391a20"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Extending Maestro's exact qutrit separation (2026) by the unitary-moment obstruction of Dykema and Juschenko (2009), we refute Conjecture 1 of Narasimhachar and Gour (arXiv:1409.7740v3, Supplementary Sec. S2 F, p. S11) even in the closure of finite ground-space thermal transitions. Two diagonal Kraus operators send the uniform pure state of a four-level system with energies 0, 1, 3, 7 to a rank-two state with the same populations. Any energy-conserving realization with an ancilla initially maximally mixed on its full ground eigenspace would express the output correlation matrix as normalized traces of four unitaries. Two linear relations make that representation impossible, with a dimension-independent gap. The trace-norm error of any such thermal output exceeds 10^-8. A three-vector projection obstruction also refutes Conjecture 2 in versions 1 and 2 of the posing source. The four-level obstruction extends to every system with at least four occupied distinct energy levels. Together with the known qutrit closure theorem, this makes four the minimum dimension for closure separation under distinct-level and distinct-gap assumptions.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "url": "/api/v1/collected-papers/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-14T06:38:22.917402861Z",
+    "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+    "repository_name": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+    "source": {
+      "url": "/api/v1/collected-papers/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/files/source?version=3"
+    },
+    "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-14T06:38:22.917402861Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+  }
+}

@@ -1,0 +1,481 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\bra}[1]{\langle #1\rvert}
+\title{Four-level closure separation at Narasimhachar--Gour's Conjecture 1\newline
+\large Supplementary Sec.\ S2 F, p.\ S11:\newline
+beyond Maestro's exact qutrit separation (2026),\newline
+using Dykema--Juschenko (2009)}
+\author{Haobo Ma\thanks{ChronoAI Pte Ltd, Singapore.}\and
+Wenlin Zhang\thanks{National University of Singapore; ChronoAI Pte Ltd, Singapore.}}
+\date{4 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Extending Maestro's exact qutrit separation (2026) by the unitary-moment
+obstruction of Dykema and Juschenko (2009),
+we refute Conjecture 1 of Narasimhachar and Gour (arXiv:1409.7740v3,
+Supplementary Sec.\ S2 F, p.\ S11) even in the closure of finite
+ground-space thermal transitions. Two diagonal Kraus operators send the uniform pure state of a
+four-level system with energies $0,1,3,7$ to a rank-two state with the same
+populations. Any energy-conserving realization with an ancilla initially
+maximally mixed on its full ground eigenspace would express the output
+correlation matrix as normalized traces of four unitaries. Two linear
+relations make that representation impossible, with a dimension-independent
+gap. The trace-norm error of any such thermal output exceeds $10^{-8}$.
+A three-vector projection obstruction also refutes Conjecture 2 in
+versions 1 and 2 of the posing source. The four-level obstruction extends
+to every system with at least four occupied distinct energy levels.
+Together with the known qutrit closure theorem,
+this makes four the minimum dimension for closure separation under
+distinct-level and distinct-gap assumptions.
+\end{abstract}
+\noindent\textbf{License.} Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+\section{The conjecture and the obstruction}
+Narasimhachar and Gour's Conjecture 1 (Supplementary Sec.\ S2 F, p.\ S11)
+concerns equivalence of cooling maps
+and low-temperature thermal operations for the feasibility of \emph{state
+transitions}, not just equality of channel sets \cite[Sec.\ S2 F,
+Conjecture 1]{NG}. Exact finite-bath separation is already established
+for qutrits by Maestro \cite[Letter, first main result; Supplement,
+pp.\ 1--2]{MA}, while every generic qutrit cooling channel remains
+approximable. We give a rational four-level cooling transition that no exact finite
+ground-space thermal operation realizes. Throughout, this thermal model means
+\begin{equation}\label{eq:thermal}
+\mathcal T(\rho)=\Tr_A\!\left[U(\rho\otimes P_0/g)U^\dagger\right],
+\qquad [U,H_S\otimes I+I\otimes H_A]=0,
+\end{equation}
+where $H_A$ acts on a nonzero finite-dimensional space, $P_0$ is its full
+ground-space projector, and $g=\Tr P_0\geq1$. This is the idealized ground-state
+limit in \cite[main-text Eq.\ (6); Supplementary Sec.\ S2 A]{NG}.
+With $E_0<\cdots<E_3$, a cooling map has Kraus operators that are diagonal
+or proportional to $\ket j\bra k$ with $j<k$.
+
+The algebraic obstruction predates the thermodynamic conjecture.
+Dykema and Juschenko \cite[Proposition 2.10 and Corollary 2.11]{DJ}
+exhibit a rank-two $4\times4$ correlation matrix outside the set of
+tracial unitary moments. Haagerup and Musat
+\cite[Lemma 2.8, Example 3.2 and Remark 3.6]{HM} relate this obstruction to
+nonfactorizable Schur multipliers. Their Remark 4.8(2) also records an
+earlier four-level example of K\"ummerer (1986). Thus the recorded
+chronology is K\"ummerer (1986), Dykema--Juschenko (2009), then
+Haagerup--Musat (2010 preprint; 2011 journal).
+We use a rational rank-two variant and
+give the elementary matrix argument below. The thermodynamic step is that
+unchanged, strictly positive populations force the four ground-space
+blocks of any realization to be unitary. This turns a single state transition
+into precisely the unitary-moment problem. We extend its elementary proof
+to approximate thermal transitions and to the earlier vector conjecture
+\cite[Supplementary Sec.\ II F, Conjecture 2, p.\ S11]{NG1,NG2}, also posed
+by Narasimhachar in August 2014 \cite{MSE}.
+
+Related closure separations at positive temperature are known for an equally
+spaced qutrit \cite[Sec.\ IV C, Eq.\ (36)]{DHD} and for paired coherences in
+a four-level system \cite[Sec.\ III B, Eqs.\ (20)--(28)]{CS}.
+Those results use finite-temperature Gibbs baths, rather than
+\eqref{eq:thermal}. Schur factorization also has earlier thermodynamic
+applications \cite[Appendix C.2]{LSBNW}. The rational projection-trace
+obstruction underlying Maestro's example appears in \cite[Proposition 3.2
+and Example 3.4]{MR}; a broader two-unitary rational-weight criterion is
+given in \cite[Proposition 3.6]{MUS}. These prior results are distinct from
+the uniform four-unitary obstruction used below.
+
+\section{An explicit transition}
+Index the energy eigenbasis by $0,1,2,3$ and put
+\begin{equation}\label{eq:data}
+H_S=\diag(0,1,3,7),\qquad
+B=\begin{pmatrix}1&0\\0&1\\3/5&4/5\\3/5&4i/5\end{pmatrix},
+\qquad C=BB^\dagger.
+\end{equation}
+Let $\ket+=\frac12\sum_{j=0}^3\ket j$, $\rho=\ket+\bra+$, and $\sigma=C/4$.
+The four rows of $B$ have norm one, so $C$ is positive semidefinite with
+unit diagonal. Its rank is two, since its first two rows are independent.
+Consequently $\sigma$ is a density matrix, with all four populations $1/4$.
+Define
+\begin{equation}\label{eq:kraus}
+K_0=\diag(1,0,3/5,3/5),\qquad
+K_1=\diag(0,1,4/5,4i/5).
+\end{equation}
+Then $K_0^\dagger K_0+K_1^\dagger K_1=I$ and
+$\sum_{r=0}^1K_r\rho K_r^\dagger=C/4$ entry by entry. Thus these diagonal
+Kraus operators define a cooling map realizing $\rho\mapsto\sigma$.
+The positive energy gaps are $1,2,3,4,6,7$, all different, as required by
+the source's nondegeneracy assumptions.
+For this pair, the matrix $Q$ of the source's Theorem 1 (Supplementary
+Theorem S2.4) is exactly $C$; its cooling-map criterion is satisfied.
+
+\begin{lemma}\label{lem:blocks}
+Let $H_S=\diag(E_0,\ldots,E_3)$ with strictly increasing energies. Let
+$\ket\psi=\sum_k\alpha_k\ket k$ with $\alpha_k\ne0$ for every $k$.
+If a map of the form \eqref{eq:thermal} preserves the populations of
+$\ket\psi\bra\psi$, then its output has entries
+\begin{equation}\label{eq:gram}
+\mathcal T(\ket\psi\bra\psi)_{jk}
+=\alpha_j\overline{\alpha_k}\,g^{-1}\Tr(V_jV_k^\dagger)
+\end{equation}
+for four $g\times g$ unitary matrices $V_0,\ldots,V_3$.
+\end{lemma}
+\begin{proof}
+Choose an energy eigenbasis of the ancilla, with energies $e_a$ and ground
+energy $e_0$, and write $G=\{a:e_a=e_0\}$. Put
+$u_{jb,ka}=\bra{j,b}U\ket{k,a}$. Energy conservation gives
+\begin{equation}\label{eq:support}
+u_{jb,ka}=0\quad\text{unless}\quad E_j+e_b=E_k+e_a.
+\end{equation}
+For $a\in G$, a nonzero entry requires $j\leq k$.
+For fixed $j,b$ and $a\in G$,
+at most one $k$ satisfies \eqref{eq:support}, because the $E_k$ are distinct.
+Hence the cross terms in each output population vanish. With
+\[
+P_{j|k}=\frac1g\sum_{a\in G}\sum_b|u_{jb,ka}|^2,
+\qquad p_k=|\alpha_k|^2>0,
+\]
+the populations transform as $p\mapsto Pp$; $P$ is nonnegative,
+column stochastic by unitarity of $U$, and $P_{j|k}=0$ for $j>k$.
+Population preservation implies
+\[
+0=\sum_kE_kp_k-\sum_jE_j(Pp)_j
+=\sum_{j<k}(E_k-E_j)P_{j|k}p_k.
+\]
+All terms are nonnegative and every coefficient of $P_{j|k}$ is positive,
+so $P_{j|k}=0$ for $j<k$. Thus $P=I$. Each vanished sum of squares forces
+$u_{jb,ka}=0$ for $a\in G$ and $j\ne k$. When $j=k$,
+\eqref{eq:support} forces $b\in G$. Consequently
+\[
+U\ket{k,a}=\ket k\otimes V_k\ket a\qquad(a\in G).
+\]
+The $g$ columns on the right are orthonormal and lie in the $g$-dimensional
+ground space; each $V_k$ is therefore unitary. Substituting these blocks
+in \eqref{eq:thermal} gives \eqref{eq:gram}.
+\end{proof}
+
+\begin{theorem}\label{thm:counterexample}
+The cooling transition \eqref{eq:data}--\eqref{eq:kraus} has no realization
+of the form \eqref{eq:thermal}, for any finite ancilla Hamiltonian or ground
+degeneracy.
+\end{theorem}
+\begin{proof}
+Suppose it did. Lemma~\ref{lem:blocks} gives unitaries with
+$g^{-1}\Tr(V_jV_k^\dagger)=C_{jk}$. In the Hilbert space of matrices with
+inner product $\langle X,Y\rangle=g^{-1}\Tr(XY^\dagger)$, the four $V_j$
+therefore have the same Gram matrix as the rows of $B$. Set $a=3/5$, $b=4/5$.
+The row relations $B_2=aB_0+bB_1$ and $B_3=aB_0+ibB_1$ imply
+\begin{equation}\label{eq:relations}
+V_2=aV_0+bV_1,\qquad V_3=aV_0+ibV_1.
+\end{equation}
+Indeed, expanding the squared norm of either residual uses only the Gram
+entries, so gives the same value, zero, as for the corresponding row residual
+of $B$; positive definiteness of the matrix inner product makes the residual
+itself zero. Put $X=V_0V_1^\dagger$. Since $a^2+b^2=1$, unitarity in
+\eqref{eq:relations} gives
+\[
+I=V_2V_2^\dagger=I+ab(X+X^\dagger),\qquad
+I=V_3V_3^\dagger=I+iab(X^\dagger-X).
+\]
+As $ab\ne0$, these equations yield $X+X^\dagger=0$ and
+$X^\dagger-X=0$, hence $X=0$. But $X$ is unitary on a nonzero space,
+a contradiction.
+\end{proof}
+
+\section{A uniform gap and approximate transitions}
+Write $\|A\|_{2,g}=(\Tr(AA^\dagger)/g)^{1/2}$ for the normalized
+Hilbert--Schmidt norm.
+\begin{lemma}\label{lem:gap}
+For any four $g\times g$ unitaries, $g\geq1$, their correlation matrix
+$D_{jk}=g^{-1}\Tr(V_jV_k^\dagger)$ satisfies
+$\max_{j,k}|D_{jk}-C_{jk}|\geq1/144$.
+\end{lemma}
+\begin{proof}
+Put $\delta=\max|D_{jk}-C_{jk}|$, $a=3/5$, $b=4/5$.
+The squared norms of the two residuals in \eqref{eq:relations} vanish
+for $C$. Expanding them with $D$ therefore bounds each by
+$(1+a+b)^2\delta$, so each residual norm is at most $12\sqrt\delta/5$.
+For $A=aV_0+bV_1$ one has $\|A\|_\infty\leq7/5$ and thus
+\[
+\|AA^\dagger-I\|_{2,g}
+\leq(\|A\|_\infty+1)\|A-V_2\|_{2,g}
+\leq144\sqrt\delta/25.
+\]
+The same estimate holds for $aV_0+ibV_1$ and $V_3$.
+Dividing the resulting unitarity identities by $ab=12/25$ gives
+$\|X+X^\dagger\|_{2,g}\leq12\sqrt\delta$ and
+$\|X^\dagger-X\|_{2,g}\leq12\sqrt\delta$, where $X=V_0V_1^\dagger$.
+The triangle inequality gives $1=\|X\|_{2,g}\leq12\sqrt\delta$.
+\end{proof}
+
+\begin{corollary}\label{cor:robust}
+For the data \eqref{eq:data}, every output $\tau=\mathcal T(\rho)$
+of \eqref{eq:thermal} satisfies $\|\tau-\sigma\|_1>10^{-8}$.
+In particular, $\sigma$ is outside the closure of these thermal outputs.
+\end{corollary}
+\begin{proof}
+Let $P_{j|k}$ be as in Lemma~\ref{lem:blocks}, and set
+$\ell_k=1-P_{k|k}$. The energy loss
+$L=\Tr(H_S(\rho-\tau))$ satisfies
+\[
+L=\tfrac14\sum_{j<k}(E_k-E_j)P_{j|k}
+\geq\tfrac14\sum_k\ell_k,
+\]
+since the least positive system energy gap is $1$.
+The ground-to-ground block $T_k$ of $U$ is a contraction
+with $\|T_k\|_{2,g}^2=1-\ell_k$.
+Its singular value decomposition gives a unitary $V_k$ with
+$\|T_k-V_k\|_{2,g}^2\leq\ell_k$: for each singular value $s\in[0,1]$,
+$(1-s)^2\leq1-s^2$.
+
+Purify the initial bath as $g^{-1/2}\sum_{a\in G}\ket a\ket a_R$.
+Let $w_k$ be the resulting output vector for system input $\ket k$,
+and $z_k$ the vector obtained by applying $\ket k\otimes V_k$ instead.
+The part of $w_k$ outside $\ket k\otimes G\otimes R$ has squared norm
+$\ell_k$, so $\|w_k-z_k\|^2\leq2\ell_k$.
+For the uniform pure input, Cauchy--Schwarz gives
+\[
+\left\|\tfrac12\sum_k(w_k-z_k)\right\|^2
+\leq2\sum_k\ell_k\leq8L.
+\]
+Both summed vectors are unit vectors. Their reduced states are $\tau$
+and $D/4$, respectively, so trace-norm contraction under partial trace
+and the pure-state trace-distance formula imply
+$\|\tau-D/4\|_1\leq2\sqrt{8L}$.
+Put $\varepsilon=\|\tau-\sigma\|_1$.
+Since $\rho$ and $\sigma$ have the same energy and
+$\|H_S-\tfrac72I\|_\infty=7/2$, we have $L\leq7\varepsilon/2$.
+Consequently
+\[
+\max_{j,k}|D_{jk}-C_{jk}|
+\leq4\varepsilon+16\sqrt{7\varepsilon}.
+\]
+For $\varepsilon\leq10^{-8}$ the right side is strictly less than
+$1/144$, contradicting Lemma~\ref{lem:gap}.
+\end{proof}
+
+\begin{corollary}\label{cor:tail}
+For a finite Gibbs bath with excited-state probability $p$, every
+energy-conserving output $\tau$ on the input \eqref{eq:data} satisfies
+$\|\tau-\sigma\|_1>10^{-8}-2p$.
+An exact realization therefore requires $p>5\cdot10^{-9}$.
+\end{corollary}
+\begin{proof}
+The Gibbs state is $(1-p)P_0/g+p\omega_{\rm exc}$, where
+$\omega_{\rm exc}$ is a density matrix supported outside the ground space
+when $p>0$. Its trace-norm distance from $P_0/g$ is $2p$.
+Trace-norm contraction gives $\|\tau-\tau_0\|_1\leq2p$ for the output
+$\tau_0$ of the same unitary with bath $P_0/g$.
+The triangle inequality and Corollary~\ref{cor:robust} give the result;
+the case $p=0$ is Corollary~\ref{cor:robust} itself.
+\end{proof}
+
+\section{Sibling statements and extensions}
+\begin{corollary}\label{cor:family}
+Replace $3/5,4/5$ in $B$ by any real $a,b>0$ with $a^2+b^2=1$, replace
+$i$ in its last entry by $e^{i\theta}$ with $\sin\theta\ne0$, and replace
+$\ket+$ by any normalized $\sum_j\alpha_j\ket j$ with all $\alpha_j\ne0$.
+For every strictly ordered four-level spectrum, the resulting diagonal
+cooling channel sends this input to a state that no exact finite
+ground-space thermal operation reaches.
+\end{corollary}
+\begin{proof}
+The output entries are $\alpha_j\overline{\alpha_k}C_{jk}$, and its
+populations are unchanged. Lemma~\ref{lem:blocks} again forces the Gram
+representation. The residual identities give
+$V_2=aV_0+bV_1$ and $V_3=aV_0+be^{i\theta}V_1$.
+Unitarity gives $X+X^\dagger=0$ and
+$e^{-i\theta}X+e^{i\theta}X^\dagger=0$.
+Subtracting yields $-2i\sin\theta\,X=0$, the same contradiction.
+\end{proof}
+
+\begin{corollary}\label{cor:dimensions}
+For every finite system with distinct ordered energies and every pure
+input with at least four nonzero energy amplitudes, there is a diagonal
+cooling channel whose output lies outside the closure of outputs of
+\eqref{eq:thermal}.
+\end{corollary}
+\begin{proof}
+Choose four occupied levels and assign them the rows of $B$; assign
+$(1,0)$ to every other level. The two columns define complete diagonal
+Kraus operators. Every population is unchanged. Suppose thermal outputs
+converged in trace norm to this target. Their energy losses would tend to zero.
+The nonnegative energy-loss sum in Lemma~\ref{lem:blocks} then implies
+$\ell_k=1-P_{k|k}\to0$ at every occupied level, since its input probability
+and every downward energy gap are positive. Complete each ground block to a
+unitary as in Corollary~\ref{cor:robust}. The corresponding purified output
+vectors differ in norm by at most
+$\sum_{k:\alpha_k\ne0}|\alpha_k|\sqrt{2\ell_k}\to0$.
+Their reduced states therefore have the same limit. Dividing the coherences
+on the four selected levels by their fixed nonzero input amplitudes shows
+that the four unitaries' normalized trace Gram matrices converge to $C$,
+contradicting Lemma~\ref{lem:gap}.
+\end{proof}
+
+\begin{corollary}\label{cor:vectors}
+Conjecture 2 of arXiv:1409.7740v1 and v2 (Supplementary Sec.\ II F,
+p.\ S11) is false already for three vectors in $\mathbb C^3$.
+Property S2.6 in version 3, with its rank-dimensional ground-space
+vectors, fails for the rank-two matrix $C$.
+\end{corollary}
+\begin{proof}
+Use the three-vector projection mechanism of
+\cite[Proposition 3.2 and Example 3.4]{MR}, also used for exact thermal
+separation in \cite[Supplement, Eqs.\ (4)--(10)]{MA}.
+Take $v_0=e_0$, $v_1=e_1$, $v_2=(-ie_0+e_1)/\sqrt2$ in $\mathbb C^3$.
+If three unitaries $U_t$ made $\{U_tv_j:0\leq t<3\}$ orthonormal for
+each $j$, their column matrices $M_j$ would be unitary.
+Then $V_j=M_j^\dagger$ would satisfy
+$\Tr(V_jV_k^\dagger)/3=v_j^\dagger v_k$.
+The zero Gram residual gives $V_2=(iV_0+V_1)/\sqrt2$.
+After a common right gauge set $V_0=I$. Unitarity of $V_2$ forces
+$V_1=V_1^\dagger$, while $v_1^\dagger v_0=0$ gives $\Tr V_1=0$.
+Thus $(I+V_1)/2$ is a projection of rank $3/2$, impossible.
+For Property S2.6 the same construction uses the prescribed two
+orthogonal unit vectors as the columns of a $2\times2$ matrix $M_j$;
+again $V_j=M_j^\dagger$ would represent $C$ as unitary moments.
+\end{proof}
+
+\begin{corollary}\label{cor:mixtures}
+The channel \eqref{eq:kraus} is outside the closed convex hull of
+optimally coherent cooling channels.
+\end{corollary}
+\begin{proof}
+Corollary S2.10 of \cite{NG} puts every finite convex mixture of those
+channels in the closure of finite ground-space thermal channels.
+If such mixtures converged to \eqref{eq:kraus}, their outputs on $\rho$
+would converge to $\sigma$, contradicting Corollary~\ref{cor:robust}.
+This uses, and does not refute, the source's approximation result.
+\end{proof}
+
+\begin{corollary}\label{cor:threshold}
+Under distinct-level and distinct-positive-gap assumptions, the minimum
+system dimension admitting a cooling transition outside the closure of
+finite ground-space thermal outputs is four.
+\end{corollary}
+\begin{proof}
+The four-level witness is Corollary~\ref{cor:robust}. Qubits satisfy exact
+equivalence by \cite[Corollary S2.7]{NG}. For qutrits we recall the closure
+proof of \cite[Supplement, pp.\ 1--2]{MA}. Write a cooling channel's
+coherence matrix as $Q$, with $q_k=Q_{kk}=P_{k|k}$. Delete the zero
+rows and columns; positivity makes them identically zero. The matrix
+$R_{jk}=Q_{jk}/\sqrt{q_jq_k}$ on the remaining indices is a correlation
+matrix of size at most three. By \cite[Corollary 2.8]{DJ},
+$R=\sum_\ell p_\ell z^{(\ell)}z^{(\ell)\dagger}$, where every entry
+of each $z^{(\ell)}$ has modulus one. Reinsert the zero rows using
+$\sqrt{q_k}=0$. Each term defines an optimally coherent cooling channel
+with diagonal Kraus entries $\sqrt{q_k}z_k^{(\ell)}$ and the same lowering
+probabilities $P_{j|k}$. The original channel is their convex mixture.
+Corollary S2.10 of \cite{NG} puts it in the diamond-norm closure of
+finite ground-space thermal channels, so every qutrit output is
+approximable. The one-level case is immediate.
+\end{proof}
+
+For real correlation matrices
+in any dimension, the Clifford matrices in \cite[Theorem 3.1]{DJ} give
+an exact finite unitary-moment representation. The controlled unitary
+$\sum_j\ket j\bra j\otimes V_j$, with a fully degenerate ancilla,
+then realizes the diagonal cooling channel exactly.
+
+\begin{center}
+\small
+\begin{tabular}{@{}p{.34\linewidth}p{.60\linewidth}@{}}
+\toprule
+Source item & Coverage \\
+\midrule
+\cite{NG}, Sec.\ S2 F, Conjecture 1, p.\ S11 & Reproved; prior exact separation Maestro (2026). Refuted (explicit counterexample), strengthened here to closure separation; Theorem~\ref{thm:counterexample} and Corollary~\ref{cor:robust}.\\[3pt]
+\cite{NG1,NG2}, Sec.\ II F, Conjecture 2, p.\ S11 & Refuted (explicit three-vector counterexample); Corollary~\ref{cor:vectors}, using the prior projection mechanism of \cite{MR,MA}.\\[3pt]
+\cite{NG}, Property S2.6, p.\ S12 & Not asserted universally in the source; fails for the rank-two $C$ (Corollary~\ref{cor:vectors}); sufficiency retained.\\[3pt]
+\cite{NG}, Discussion, p.\ 6 & Proved: cooling outputs need not be approximable by finite ground-space thermal outputs; Corollary~\ref{cor:robust}.\\[3pt]
+\cite{NG}, Corollary S2.10, p.\ S14 & Prior proof cited; approximation of mixtures retained. Their universality is refuted by Corollary~\ref{cor:mixtures}.\\[3pt]
+\cite{NG}, Corollaries S2.7--S2.9 & Source's qubit and rank-one results are retained as prior results; not reproved here.\\[3pt]
+\cite{NG}, Theorem S2.4; Sec.\ S3 & Prior proof cited; the cooling criterion and Gibbs-preserving results remain intact.\\[3pt]
+\cite{MA}, Letter p.\ 1; Supplement pp.\ 1--2 & Prior proof cited: exact qutrit separation (irrational weight), and qutrit closure. The closure proof is recalled in Corollary~\ref{cor:threshold}; together with Corollary~\ref{cor:robust}, it gives the four-level threshold.\\[3pt]
+\cite{HM}, Remark 4.8(2); \cite{DJ}, Corollary 2.11 & Reproved; prior obstruction K\"ummerer (1986, recorded in \cite{HM}), then Dykema--Juschenko (2009) and Haagerup--Musat (2010/2011). The rational variant has a self-contained proof.\\[3pt]
+\cite{DJ}, Corollary 2.8; Theorem 3.1 & Prior proofs cited: the correlation decomposition used for qutrit closure, and real-correlation exact realization.\\[3pt]
+\cite{DJ}, Example 4.3 & Not covered: the exact depolarizing boundary for their different square-root example.\\[3pt]
+Other models & Proved: small Gibbs-tail bound, Corollary~\ref{cor:tail}. Not covered: arbitrary positive-temperature conversion \cite{DHD,CS}, infinite ancillas and catalysts.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Mathematical verification.}
+The Lean declaration \texttt{result} in the
+\href{https://github.com/the-omega-institute/trureturing/blob/0eae8e045cb2ba958e2097dbac034f62f9c1dd7a/D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.lean}{pinned Lean source}
+has statement $\neg\,\texttt{claim}$. Its definitions encode diagonal or
+single-lowering Kraus operators and all finite ancillas in the normalized
+full ground space. Its witness is exactly \eqref{eq:data}, with the two
+operators \eqref{eq:kraus}. Its exact scope is Theorem~\ref{thm:counterexample},
+with energies $0,1,3,7$ and the uniform pure input. The uniform Gram gap,
+trace-norm separation, parameter and dimension extensions, and vector and
+mixture consequences, including the Gibbs-tail bound, have written proofs
+here, not additional conclusions
+of \texttt{result}. The accompanying Python
+checker uses rational complex arithmetic for the concrete Gram matrix,
+Kraus completeness and output, density-matrix minors, gap distinctness,
+two zero residual norms, nonzero obstruction determinant, and the rational
+constants in Lemma~\ref{lem:gap} and Corollary~\ref{cor:robust}.
+
+\begin{thebibliography}{12}
+\bibitem{NG} V. Narasimhachar and G. Gour,
+\emph{Low-temperature thermodynamics with quantum coherence},
+Nature Communications \textbf{6}, 7689 (2015).
+\href{https://doi.org/10.1038/ncomms8689}{doi:10.1038/ncomms8689}.
+\href{https://arxiv.org/abs/1409.7740v3}{arXiv:1409.7740v3}, Supplementary Sec.\ S2 F.
+\bibitem{NG1} V. Narasimhachar and G. Gour,
+\emph{Low-temperature thermodynamics with quantum coherence},
+\href{https://arxiv.org/abs/1409.7740v1}{arXiv:1409.7740v1}
+(26 September 2014), Supplementary Sec.\ II F, Conjecture 2, p.\ S11.
+\bibitem{NG2} V. Narasimhachar and G. Gour, same title,
+\href{https://arxiv.org/abs/1409.7740v2}{arXiv:1409.7740v2}
+(2014), Supplementary Sec.\ II F, Conjecture 2, p.\ S11.
+\bibitem{DJ} K. Dykema and K. Juschenko,
+\emph{Matrices of unitary moments}, Mathematica Scandinavica \textbf{109},
+225--239 (2011); preprint (2009).
+\href{https://doi.org/10.7146/math.scand.a-15186}{doi:10.7146/math.scand.a-15186}.
+\href{https://arxiv.org/abs/0901.0288}{arXiv:0901.0288}, Proposition 2.10 and Corollary 2.11.
+\bibitem{HM} U. Haagerup and M. Musat,
+\emph{Factorization and dilation problems for completely positive maps on
+von Neumann algebras}, Communications in Mathematical Physics
+\textbf{303}, 555--594 (2011); preprint (2010).
+\href{https://doi.org/10.1007/s00220-011-1216-y}{doi:10.1007/s00220-011-1216-y}.
+\href{https://arxiv.org/abs/1009.0778}{arXiv:1009.0778}.
+\bibitem{MR} M. Musat and M. R\o rdam,
+\emph{Non-closure of quantum correlation matrices and factorizable channels
+that require infinite dimensional ancilla}, Communications in Mathematical
+Physics \textbf{375}, 1761--1776 (2020; online 2019); preprint (2018),
+with an appendix by N.\ Ozawa.
+\href{https://doi.org/10.1007/s00220-019-03449-w}{doi:10.1007/s00220-019-03449-w}.
+\href{https://arxiv.org/abs/1806.10242v4}{arXiv:1806.10242v4},
+Proposition 3.2 and Example 3.4.
+\bibitem{MA} Maestro v0.1, \emph{Minimum Bath Dimension for Qutrit Cooling Maps},
+27 August 2026, v1.0, Letter and Supplemental Material.
+\href{https://pudimphysics.org/research/RO-2026-0004/releases/v1.0/combined.pdf?download=1}{Full scientific text},
+Letter p.\ 1 and Supplement pp.\ 1--2.
+\bibitem{MSE} V.\ Narasimhachar,
+\emph{Question about existence of unitary matrices with certain properties},
+Mathematics Stack Exchange, question 896675 (13 August 2014).
+\href{https://math.stackexchange.com/questions/896675/question-about-existence-of-unitary-matrices-with-certain-properties}{Original question}.
+\bibitem{DHD} Y.\ Ding, F.\ Ding and X.\ Hu,
+\emph{Exploring the gap between thermal operations and enhanced thermal operations},
+Phys.\ Rev.\ A \textbf{103}, 052214 (2021).
+\href{https://doi.org/10.1103/PhysRevA.103.052214}{doi:10.1103/PhysRevA.103.052214}.
+\href{https://arxiv.org/abs/2101.05690v2}{arXiv:2101.05690v2}.
+\bibitem{LSBNW} S.\ H.\ Lie, J.\ Son, P.\ Boes, N.\ H.\ Y.\ Ng and H.\ Wilming,
+\emph{Thermal operations from informational equilibrium} (2025).
+\href{https://arxiv.org/abs/2507.16637v1}{arXiv:2507.16637v1}, Appendix C.2.
+\bibitem{MUS} M.\ Musat,
+\emph{The Connes--Kirchberg Problem and infinite-dimensional phenomena in
+quantum information theory} (2025).
+\href{https://arxiv.org/abs/2512.00432v1}{arXiv:2512.00432v1}, Proposition 3.6.
+\bibitem{CS} P.\ \'Cwikli\'nski and M.\ Studzi\'nski,
+\emph{Limitations on joint coherence preservation in quantum thermodynamics},
+version 3 (26 October 2026).
+\href{https://arxiv.org/abs/2608.11872v3}{arXiv:2608.11872v3},
+Sec.\ III B and Appendix E.5.
+\end{thebibliography}
+\end{document}
