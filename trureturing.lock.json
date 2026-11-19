@@ -1,0 +1,17 @@
+{
+  "schema": "trureturing-books.lock.v1",
+  "repo": "the-omega-institute/trureturing",
+  "branch": "dev",
+  "commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+  "pinned_at": "2026-11-15T02:23:34Z",
+  "declarations": {
+    "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result": {
+      "module": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation",
+      "name": "D5.S3.QuantumChannels.CoolingMapThermalOperationRefutation.result",
+      "kind": "theorem",
+      "statement_id": "sha256:533faf107615cfca4568ec90a23f5affdc975c3522f167d32dbc58a0c98b009d",
+      "line": 504,
+      "signature": "theorem result : ¬ claim"
+    }
+  }
+}

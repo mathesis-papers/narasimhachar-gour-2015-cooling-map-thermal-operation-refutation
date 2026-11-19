@@ -31,3 +31,46 @@ Haobo Ma, Wenlin Zhang (2026). Four-level closure separation at Narasimhachar–
 ## Contributions
 
 Original authors are listed above. Formalization contributors and attribution are retained in `formalization/nodes.json`; repository pull requests do not confer verification or credit. Submit formalization attempts through the Mathesis attempt path described in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+<!-- Mathesis generated repository guide; refresh with paper.py front. -->
+
+## Reading and materials
+
+[Paper site](https://papers.trureturing.org/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/) · [Frozen PDF](paper.pdf) · [Citation](CITATION.cff)
+
+[中文阅读](https://papers.trureturing.org/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/zh/) · [Read in English](https://papers.trureturing.org/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/en/)
+
+[Slides](https://papers.trureturing.org/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/slides/) ([sources](books/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/slides/)) · [Videos](https://papers.trureturing.org/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/films/) ([sources](books/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/films/))
+
+These are publication routes; available built materials are inventoried in [mathesis-materials.json](https://papers.trureturing.org/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/mathesis-materials.json).
+
+## Book and formalization
+
+Catalog formalization status above is separate from the statement comparisons below. A nearby declaration does not verify the complete written result.
+
+| Book result | Comparison with formal base | Compared declaration |
+|---|---|---|
+| `population-blocks` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `exact-witness` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `gram-gap` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `closure-gap` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `gibbs-tail` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `parameter-family` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `occupied-levels` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `vector-obstruction` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `convex-mixtures` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `dimension-threshold` | variant | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+| `exact-universality-refuted` | same | `D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result` |
+
+Book stage: **complete**; 0 pending claims. [Statement comparisons](.mathesis/REVIEW.md).
+
+## Repository map
+
+| Zone | Location |
+|---|---|
+| Paper record | `paper.json`, `CITATION.cff`, `paper.pdf`, `manuscript/`, `formalization/nodes.json`, `LICENSES/`, `.mathesis/` |
+| Content | `books/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/`: Chinese/English text, figures, visualizations, videos, slides, assets |
+| Machinery | Upstream and layer managed paths; update with `tbook template update` |
+| Repository front | This README, changelog, contribution guide, licence, project/site/pin configuration, `template.d/` |
+
+See [the enforced layout](docs/layer-mathesis/LAYOUT.md). Preparation run records and built outputs stay outside the committed tree.

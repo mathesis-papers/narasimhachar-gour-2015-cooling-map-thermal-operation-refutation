@@ -1,0 +1,12 @@
+kind = "academic"
+editions = ["zh", "en"]
+aspect = "4:3"
+structure_colour = "#0e2c8e"
+short_author = "H. Ma, W. Zhang"
+short_title = "Cooling and coherence"
+date = "Version 3 · 2026"
+navigation_symbols = false
+
+[title]
+zh = "冷却而不降能：四能级的相干障碍"
+en = "Cooling without energy loss: a four-level coherence obstruction"

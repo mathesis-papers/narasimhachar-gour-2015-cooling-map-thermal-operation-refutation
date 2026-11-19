@@ -1,0 +1,154 @@
+{
+  "voice": "af_heart",
+  "speed": 0.96,
+  "say": {
+    "Kraus": "krows",
+    "Gram": "gram",
+    "Lean": "Leen",
+    "Maestro": "my strow"
+  },
+  "music": {
+    "bpm": 78,
+    "progression": "d-minor"
+  },
+  "scenes": [
+    {
+      "id": "question",
+      "name": "SAME POPULATIONS",
+      "lead": 0.9,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.15,
+        0.1,
+        0,
+        0
+      ],
+      "lines": [
+        [
+          "Imagine four energy levels, labeled zero, one, three, and seven. Each has probability one quarter, before and after a change.",
+          "设四个能级的能量为零、一、三、七，变化前后每个能级的概率都是四分之一。"
+        ],
+        [
+          "The change is in coherence: how quantum amplitudes fit together. A probability table alone cannot describe it.",
+          "变化发生在相干性上，即量子振幅彼此的关系。只列概率还不够。"
+        ]
+      ]
+    },
+    {
+      "id": "witness",
+      "name": "BUILD THE TARGET",
+      "lead": 0.9,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.15,
+        0.1,
+        0,
+        0
+      ],
+      "lines": [
+        [
+          "Start with equal amplitudes. Four unit rows define a Gram matrix, a table of pairwise inner products.",
+          "从相等振幅出发。四个单位行向量的两两内积构成 Gram 矩阵。"
+        ],
+        [
+          "The last two rows use three fifths and four fifths, with one imaginary phase. Two diagonal Kraus operators produce this target while keeping every population fixed.",
+          "最后两行使用五分之三和五分之四，其中一项带虚相位。两个对角 Kraus 算子产生目标，且所有能级概率不变。"
+        ]
+      ]
+    },
+    {
+      "id": "blocks",
+      "name": "NO ENERGY LOSS",
+      "lead": 0.9,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.15,
+        0.1,
+        0,
+        0
+      ],
+      "lines": [
+        [
+          "Now demand a finite bath, uniform on its entire ground space, and a joint unitary that conserves total energy.",
+          "现在要求环境有限、初态在完整基态空间均匀混合，且联合酉演化守恒总能量。"
+        ],
+        [
+          "The bath cannot supply energy. Every downward jump would lose energy. Unchanged populations force all those jumps to vanish, leaving four unitary bath blocks.",
+          "环境不能提供能量，每个向下跃迁都会损失能量。概率不变迫使这些跃迁全部消失，只留下四个酉的环境块。"
+        ]
+      ]
+    },
+    {
+      "id": "relations",
+      "name": "TWO RELATIONS",
+      "lead": 0.9,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.15,
+        0.1,
+        0,
+        0
+      ],
+      "lines": [
+        [
+          "The unitary blocks must have the same Gram matrix as our four rows. Zero residual length transfers both row relations to the blocks.",
+          "四个酉块必须有相同的 Gram 矩阵。残差长度为零，将两条行关系传给这些块。"
+        ],
+        [
+          "Call the product of the first block and the second adjoint X. The two relations force X to equal zero. But X is unitary: impossible on a nonzero space.",
+          "把第一个块与第二个块的共轭转置之积记作 X。两条关系迫使 X 为零，但 X 是酉矩阵：在非零空间上矛盾。"
+        ]
+      ]
+    },
+    {
+      "id": "gap",
+      "name": "BEYOND EXACT FAILURE",
+      "lead": 0.9,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.15,
+        0.1,
+        0,
+        0
+      ],
+      "lines": [
+        [
+          "Exact failure alone would not exclude approximation. The written proof strengthens the contradiction to a Gram error of at least one over one hundred forty four, independent of bath size.",
+          "精确失败本身不排除逼近。书面证明进一步给出至少一百四十四分之一的 Gram 误差，与环境大小无关。"
+        ],
+        [
+          "Controlling energy leakage then shows that every thermal output misses the target by more than ten to the minus eight in the full trace norm.",
+          "再控制能量泄漏，便证明每个热输出与目标的完整迹范数误差都大于十的负八次方。"
+        ]
+      ]
+    },
+    {
+      "id": "scope",
+      "name": "WHAT IS ESTABLISHED",
+      "lead": 0.9,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.15,
+        0.1,
+        0,
+        0
+      ],
+      "lines": [
+        [
+          "The public Lean theorem refutes universal exact equivalence. Its proof constructs this example; the quantitative closure bound is a written extension.",
+          "公开 Lean 定理否定普遍精确等价，其证明构造了本例；定量闭包界则是书面推广。"
+        ],
+        [
+          "Maestro previously separated three levels exactly, while retaining approximation. Four is the closure threshold under distinct-level and distinct-gap assumptions. Arbitrary positive temperature and infinite baths remain outside this result.",
+          "Maestro 先前已给出三能级精确分离，但三能级仍可逼近。在能级及正能隙互异的假设下，四是闭包分离阈值；任意正温度与无限环境不在本结论内。"
+        ]
+      ]
+    }
+  ]
+}

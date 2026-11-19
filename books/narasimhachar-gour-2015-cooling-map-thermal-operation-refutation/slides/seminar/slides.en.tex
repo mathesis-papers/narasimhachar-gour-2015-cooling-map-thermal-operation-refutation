@@ -1,0 +1,175 @@
+\documentclass{beamer}
+\input{tbook-deck}
+\title{Cooling without energy loss: a four-level coherence obstruction}
+\author{Haobo Ma\inst{1} \and Wenlin Zhang\inst{1,2}}
+\institute{\inst{1}ChronoAI Pte Ltd, Singapore\\\inst{2}National University of Singapore, Singapore}
+\date{Version 3 · 2026}
+\begin{document}
+% Manuscript: Overview
+\begin{frame}
+\titlepage
+\note{This talk explains version 3 by Haobo Ma and Wenlin Zhang. Narasimhachar and Gour posed the thermal-transition question; the matrix obstruction has earlier operator-algebra origins. We follow one state transition through to closure separation.}
+\end{frame}
+% Manuscript: Sections 1–4
+\begin{frame}{Route}
+\tableofcontents
+\note{Begin with probabilities and coherence, construct the transition, then prove the exact contradiction. Approximation requires an additional estimate. Finish with priority, dimension and formal scope.}
+\end{frame}
+\section{Question and example}
+\subsection{Populations and coherence}
+% Manuscript: Section 1; reading introduction
+\begin{frame}{Same probabilities, different coherence}
+\[|\psi\rangle=(|0\rangle+|1\rangle)/\sqrt2,\quad
+ \rho_{\rm mix}=\tfrac12|0\rangle\langle0|+\tfrac12|1\rangle\langle1|.\]
+ \begin{itemize}
+ \item Both give energy probabilities $(1/2,1/2)$.
+ \item Recombining amplitudes reveals interference only in the first.
+ \item Diagonal: populations. Off-diagonal: coherence.
+ \end{itemize}
+\note{The pure-state matrix has off-diagonal entries $1/2$; the mixture has zero off-diagonal entries. The floor analogy explains energy flow but does not turn a quantum state into a hidden classical floor.}
+\end{frame}
+% Manuscript: Section 1, Eq. (1)
+\begin{frame}{Two allowed rules}
+\begin{itemize}
+ \item Cooling: diagonal Kraus operators or single downward jumps.
+ \item Thermal: nonzero finite bath, uniform on its full ground space.
+ \end{itemize}
+ \[\mathcal T(\rho)=\operatorname{Tr}_A U(\rho\otimes P_0/g)U^\dagger,\quad g\geq1.\]
+ \[[U,H_S\otimes I+I\otimes H_A]=0.\]
+ The question concerns a fixed state pair, not only channel sets.
+\note{$P_0$ is the entire lowest-energy projector, not a chosen pure ground state. Bath dimension and ground degeneracy are unbounded across finite realizations. Arbitrary positive temperature, infinite baths and catalysts are outside the main model.}
+\end{frame}
+% Manuscript: Section 2, Eqs. (2)–(3)
+\begin{frame}{A rational four-level example}
+\[H_S=\operatorname{diag}(0,1,3,7),\quad |+\rangle=\tfrac12\sum_{j=0}^3|j\rangle.\]
+ \[B=\begin{pmatrix}1&0\\0&1\\3/5&4/5\\3/5&4i/5\end{pmatrix},\quad C=BB^\dagger,\quad\sigma=C/4.\]
+ Unit rows: $\sigma$ is positive, trace one and rank two.
+ All four populations remain $1/4$.
+\note{Use $3^2+4^2=5^2$ to check row lengths. In particular $C_{23}=9/25-16i/25$; conjugation matters. The positive gaps $1,2,3,4,6,7$ are all distinct.}
+\end{frame}
+% Manuscript: Section 2, Eq. (3)
+\begin{frame}{The cooling channel really does it}
+\[K_0=\operatorname{diag}(1,0,3/5,3/5),\]
+ \[K_1=\operatorname{diag}(0,1,4/5,4i/5).\]
+ \[K_0^\dagger K_0+K_1^\dagger K_1=I,\qquad
+ \sum_r K_r|+\rangle\langle+|K_r^\dagger=C/4.\]
+ Branches need not be unitary; the channel preserves total probability.
+\note{Check completeness at each diagonal entry. Every output entry is $\sum_r B_{jr}\overline{B_{kr}}/4$. We first establish that the abstract cooling rule permits this transition.}
+\end{frame}
+\section{Exact obstruction}
+\subsection{Unitary relations}
+% Manuscript: Section 2, Lemma 1
+\begin{frame}{No energy loss means no downward jumps}
+\[0=\sum_{j<k}(E_k-E_j)P_{j|k}p_k,\qquad p_k>0.\]
+ Nonnegative terms force $P_{j|k}=0$ for $j<k$.
+ \[U(|k\rangle\otimes|a\rangle)=|k\rangle\otimes V_k|a\rangle,\quad a\in G.\]
+ Each $V_k$ is a $g\times g$ unitary. Coherences must obey
+ \[\tau_{jk}=\alpha_j\overline{\alpha_k}\operatorname{Tr}(V_jV_k^\dagger)/g.\]
+\note{Energy conservation first removes cross terms from output populations; then use the nonnegative energy-loss sum. The space $G$ is the full bath ground space. Orthogonal columns remain in a space of equal dimension, making each block unitary. The arbitrary-input lemma is a written manuscript result.}
+\end{frame}
+% Manuscript: Section 2, Theorem 2
+\begin{frame}{Two relations, one contradiction}
+\[V_2=aV_0+bV_1,\qquad V_3=aV_0+ibV_1,\quad(a,b)=(3/5,4/5).\]
+ Equal Gram matrices transfer zero-residual relations.
+ \[X=V_0V_1^\dagger,\qquad X+X^\dagger=0,\quad X^\dagger-X=0.\]
+ Thus $X=0$, but $XX^\dagger=I\ne0$.
+ \begin{block}{Exact separation of this state pair}
+ No finite ground-space thermal operation sends $\rho$ to $\sigma$.
+ \end{block}
+\note{Expand $\operatorname{Tr}(RR^\dagger)/g$ to transfer the row relations. The two unitarity identities eliminate both parts of $X$. A nonzero bath ensures $I\ne0$.}
+\end{frame}
+\section{Closure and scope}
+\subsection{Uniform gap}
+% Manuscript: Section 3, Lemma 3 and Corollary 4
+\begin{frame}{Exact failure does not exclude approximation}
+Rationals cannot equal $\sqrt2$, but can approximate it.
+ \[D_{jk}=\operatorname{Tr}(V_jV_k^\dagger)/g,\qquad
+ \max_{jk}|D_{jk}-C_{jk}|\geq1/144.\]
+ \begin{block}{Manuscript Corollary 4 (written argument)}
+ Every thermal output $\tau$ obeys $\|\tau-\sigma\|_1>10^{-8}$.
+ \end{block}
+ Full trace norm; no extra factor $1/2$.
+\note{The bound is independent of bath size. It needs more than the exact contradiction on the preceding frame. The appendix supplies the residual and energy-leakage bridge. No optimality is claimed for $10^{-8}$.}
+\end{frame}
+% Manuscript: Section 4, Corollary 10
+\begin{frame}{Four is the closure-separation threshold}
+\begin{tabular}{cl}
+ Dimension & Under generic-spectrum assumptions\\\hline
+ $1,2$ & Exact thermal realizability\\
+ $3$ & Exact separation, yet arbitrary approximation\\
+ $4$ & This target is not even approximable
+ \end{tabular}
+ \medskip
+
+ Qutrit closure: Maestro. Correlation decomposition: Dykema--Juschenko.
+ The original mixture approximation result S2.10 is retained.
+\note{This frame assumes distinct levels and distinct positive gaps. Normalize the qutrit coherence matrix, decompose it into rank-one phase matrices, then apply S2.10. Four is not the minimum dimension for exact separation.}
+\end{frame}
+% Manuscript: Section 4, Mathematical verification paragraph
+\begin{frame}{The exact formal statement}
+$\mathcal A$: for all $d,E,\rho,\sigma$, strict energy order, distinct positive gaps, density matrices and a finite cooling Kraus realization imply an exact thermal realization with a positive-dimensional finite bath.
+ \begin{bookresult}{exact-universality-refuted}
+ $\neg\mathcal A$.
+ \end{bookresult}
+ The Lean proof refutes the universal rule using the four-level construction.
+ The quantitative closure bounds remain separate written results.
+\note{The verified conclusion is $\neg\mathcal A$: the universal rule fails. Its proof uses the fixed four-level example. The more specific statement of Theorem 2 and the quantitative closure bounds are separately identified written results.}
+\end{frame}
+% Manuscript: Sections 1 and 4; bibliography
+\begin{frame}{Meaning, sources and limits}
+\begin{itemize}
+ \item Equal populations do not guarantee physical realizability.
+ \item Narasimhachar--Gour (2015): original question.
+ \item Maestro (2026): prior exact qutrit separation and closure.
+ \item Kümmerer; Dykema--Juschenko; Haagerup--Musat: earlier matrix obstructions.
+ \item Arbitrary positive temperature, infinite baths and catalysts are outside the main result.
+ \end{itemize}
+\note{Distinguish earlier matrix mathematics from this thermodynamic application. The original S2.4, qubit and rank-one results, and S2.10 remain intact. Coordinate further formalization through the shared issues and focused upstream contributions.}
+\end{frame}
+\appendix
+\section{Technical appendix}
+% Manuscript: Section 3, Lemma 3
+\begin{frame}{Appendix: the uniform gap estimate}
+\[\delta=\max|D-C|,\quad\|R_2\|_{2,g},\|R_3\|_{2,g}\leq\tfrac{12}{5}\sqrt\delta.\]
+ \[\|AA^\dagger-I\|_{2,g}\leq\tfrac{144}{25}\sqrt\delta,\quad ab=\tfrac{12}{25}.\]
+ \[\|X+X^\dagger\|_{2,g},\|X^\dagger-X\|_{2,g}\leq12\sqrt\delta.\]
+ \[1=\|X\|_{2,g}\leq12\sqrt\delta\quad\Longrightarrow\quad\delta\geq1/144.\]
+\note{The normalized Hilbert--Schmidt norm satisfies $\|V\|_{2,g}=1$. Bound squared residuals using the Gram entries; the coefficient sum is $1+a+b=12/5$. These bounds do not grow with $g$.}
+\end{frame}
+% Manuscript: Section 3, Corollaries 4–5
+\begin{frame}{Appendix: leakage to trace norm}
+\[L\geq\tfrac14\sum_k\ell_k,\quad\|T_k-V_k\|_{2,g}^2\leq\ell_k.\]
+ \[\|\tau-D/4\|_1\leq2\sqrt{8L},\quad L\leq7\varepsilon/2.\]
+ \[\max|D-C|\leq4\varepsilon+16\sqrt{7\varepsilon}<1/144\]
+ if $\varepsilon\leq10^{-8}$: contradiction.
+
+ Gibbs excited probability $p$: $\|\tau-\sigma\|_1>10^{-8}-2p$.
+\note{Complete the contraction block $T_k$ to $V_k$ using singular values. Compare purifications, then trace out the bath. The Gibbs bound yields only the necessary condition $p>5\cdot10^{-9}$ for exact realization, not sufficiency.}
+\end{frame}
+% Manuscript: Section 4, Corollaries 6–9
+\begin{frame}{Appendix: quantifiers in the extensions}
+\begin{itemize}
+ \item $a,b>0$, $a^2+b^2=1$, $\sin\theta\ne0$: exact separation for every full-support input.
+ \item At least four occupied distinct levels: an output outside the closure exists.
+ \item Three-vector problem: a projection would have rank $3/2$.
+ \item Fixed channel outside the closed optimally coherent convex hull.
+ \end{itemize}
+ No common $10^{-8}$ constant is claimed for the parameter family.
+\note{At $\sin\theta=0$ the second constraint ceases to be independent. The higher-dimensional extension needs distinct levels only. Keep the v1/v2 vector conjecture separate from the v3 sufficient condition.}
+\end{frame}
+% Manuscript: Bibliography
+\begin{frame}{Appendix: original sources}
+\small
+ \begin{itemize}
+ \item Ma--Zhang, version 3, Sections 2--4.
+ \item Narasimhachar--Gour (2015), S2 F; \href{https://doi.org/10.1038/ncomms8689}{10.1038/ncomms8689}.
+ \item Dykema--Juschenko, Cor. 2.8, 2.11; Thm. 3.1; \href{https://doi.org/10.7146/math.scand.a-15186}{10.7146/math.scand.a-15186}.
+ \item Haagerup--Musat, Remark 4.8(2); \href{https://doi.org/10.1007/s00220-011-1216-y}{10.1007/s00220-011-1216-y}.
+ \item Musat--Rørdam, Prop. 3.2, Ex. 3.4; \href{https://doi.org/10.1007/s00220-019-03449-w}{10.1007/s00220-019-03449-w}.
+ \item Maestro v0.1 (2026), Letter p. 1; Supplement pp. 1--2.
+ \end{itemize}
+\note{The final reading chapter gives full citations and public links. Preserve original credit and the distinction between preprint and journal dates.}
+\end{frame}
+% Manuscript: Mathematical verification paragraph; exact universal refutation only
+\FormalVerification
+\end{document}

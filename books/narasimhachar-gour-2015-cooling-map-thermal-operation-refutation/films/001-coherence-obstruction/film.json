@@ -1,0 +1,29 @@
+{
+  "duration": "2:11",
+  "id": "001-coherence-obstruction",
+  "lean": [
+    "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result"
+  ],
+  "narration": {
+    "engine": "Kokoro-82M v1.0 (onnx)",
+    "language": "en",
+    "voice": "af_heart"
+  },
+  "outputs": {
+    "cover": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation_001_cover.jpg",
+    "narrated_720p": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation_001_720p_narrated.mp4"
+  },
+  "publication_basis": "pinned",
+  "released": "2026-11-15",
+  "resolution": "1280x720@30",
+  "style": "trureturing cyberpunk · deterministic canvas",
+  "subject": "https://github.com/the-omega-institute/trureturing",
+  "subtitles": [
+    "zh",
+    "en"
+  ],
+  "summary": "Four unchanged energy probabilities conceal a coherence obstruction: two Gram relations exclude every finite full-ground-space thermal realization, with a written uniform closure bound.",
+  "summary_zh": "四个不变的能级概率背后，两条 Gram 关系排除有限完整基态空间热实现；书面估计还给出统一闭包分离。",
+  "title": "Cooling without energy loss",
+  "title_zh": "冷却而不降能"
+}

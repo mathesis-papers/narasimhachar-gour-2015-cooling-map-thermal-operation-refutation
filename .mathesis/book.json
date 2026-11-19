@@ -1,0 +1,132 @@
+{
+  "book": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
+  "pending_claims": [],
+  "results": {
+    "population-blocks": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s1",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Population-preserving thermal blocks for arbitrary full-support inputs",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/76"
+      }
+    },
+    "exact-witness": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s2",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Expose the existing concrete four-level exact-separation witness",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/77"
+      }
+    },
+    "gram-gap": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s3",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Dimension-independent rational four-unitary Gram gap",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/78"
+      }
+    },
+    "closure-gap": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s4",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Four-level thermal-output trace-norm closure separation",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/79"
+      }
+    },
+    "gibbs-tail": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s5",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Finite Gibbs-tail stability of the four-level obstruction",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/80"
+      }
+    },
+    "parameter-family": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s6",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Full-support phase-parameter family of exact cooling separation",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/81"
+      }
+    },
+    "occupied-levels": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s7",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Closure separation with four occupied distinct energy levels",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/82"
+      }
+    },
+    "vector-obstruction": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s8",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Three-vector unitary-family and rank-two S2.6 obstructions",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/83"
+      }
+    },
+    "convex-mixtures": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s9",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Cooling channel outside closed optimally coherent convex hull",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/84"
+      }
+    },
+    "dimension-threshold": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s10",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a",
+      "formalization_request": {
+        "label": "Minimum generic dimension four for closure separation",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/85"
+      }
+    },
+    "exact-universality-refuted": {
+      "claim": "collected:narasimhachar-gour-2015-cooling-map-thermal-operation-refutation:3:s2",
+      "gids": [
+        "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result"
+      ],
+      "comparison_verdict": "same",
+      "compared_public_gid": "D5/S3/QuantumChannels/CoolingMapThermalOperationRefutation.result",
+      "comparison_commit": "0eae8e045cb2ba958e2097dbac034f62f9c1dd7a"
+    }
+  },
+  "stage": "complete",
+  "titles": {
+    "en": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
+    "zh": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)"
+  },
+  "version": 3,
+  "work": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation"
+}

@@ -1,0 +1,175 @@
+\documentclass{beamer}
+\input{tbook-deck}
+\title{冷却而不降能：四能级的相干障碍}
+\author{Haobo Ma\inst{1} \and Wenlin Zhang\inst{1,2}}
+\institute{\inst{1}ChronoAI Pte Ltd, Singapore\\\inst{2}National University of Singapore, Singapore}
+\date{Version 3 · 2026}
+\begin{document}
+% Manuscript: Overview
+\begin{frame}
+\titlepage
+\note{本报告介绍 Haobo Ma 与 Wenlin Zhang 第 3 版论文。原问题来自 Narasimhachar 与 Gour；四能级矩障碍有更早的算子代数来源。本报告的重点是从一个具体状态转移走到闭包分离。}
+\end{frame}
+% Manuscript: Sections 1–4
+\begin{frame}{路线}
+\tableofcontents
+\note{先解释概率与相干，再构造反例。精确矛盾只用两条线性关系；近似分离需要额外估计。最后说明先前结果、维数阈值及形式证明范围。}
+\end{frame}
+\section{问题与例子}
+\subsection{概率与相干}
+% Manuscript: Section 1; reading introduction
+\begin{frame}{同样概率，不同相干}
+\[|\psi\rangle=(|0\rangle+|1\rangle)/\sqrt2,\quad
+ \rho_{\rm mix}=\tfrac12|0\rangle\langle0|+\tfrac12|1\rangle\langle1|.\]
+ \begin{itemize}
+ \item 能量测量都给出概率 $(1/2,1/2)$。
+ \item 重新组合振幅时，只有前者产生相干干涉。
+ \item 对角线记录概率；非对角线记录相干。
+ \end{itemize}
+\note{纯态矩阵的非对角元素是 $1/2$，混合态的非对角元素是零。楼层比喻只能解释能量流，不能把量子态理解成隐藏的经典楼层。}
+\end{frame}
+% Manuscript: Section 1, Eq. (1)
+\begin{frame}{两种允许的规则}
+\begin{itemize}
+ \item 冷却通道：Kraus 算子对角，或仅有向下跃迁。
+ \item 热操作：有限非零环境，完整基态空间均匀态。
+ \end{itemize}
+ \[\mathcal T(\rho)=\operatorname{Tr}_A U(\rho\otimes P_0/g)U^\dagger,\quad g\geq1.\]
+ \[[U,H_S\otimes I+I\otimes H_A]=0.\]
+ 问题是同一个输入输出对，不仅是通道集合相等。
+\note{$P_0$ 必须是完整最低能量投影，不能任意选一个纯基态。环境维数与基态简并度无上限。一般正温度、无限环境和催化不属于主模型。}
+\end{frame}
+% Manuscript: Section 2, Eqs. (2)–(3)
+\begin{frame}{一个有理四能级例子}
+\[H_S=\operatorname{diag}(0,1,3,7),\quad |+\rangle=\tfrac12\sum_{j=0}^3|j\rangle.\]
+ \[B=\begin{pmatrix}1&0\\0&1\\3/5&4/5\\3/5&4i/5\end{pmatrix},\quad C=BB^\dagger,\quad\sigma=C/4.\]
+ 每行长度一；$\sigma$ 半正定、迹一、秩二。
+ 四个能级概率始终是 $1/4$。
+\note{用 $3^2+4^2=5^2$ 检查单位行长。$C_{23}=9/25-16i/25$，共轭符号很重要。正能隙为 $1,2,3,4,6,7$，全都不同。}
+\end{frame}
+% Manuscript: Section 2, Eq. (3)
+\begin{frame}{冷却通道确实能做到}
+\[K_0=\operatorname{diag}(1,0,3/5,3/5),\]
+ \[K_1=\operatorname{diag}(0,1,4/5,4i/5).\]
+ \[K_0^\dagger K_0+K_1^\dagger K_1=I,\qquad
+ \sum_r K_r|+\rangle\langle+|K_r^\dagger=C/4.\]
+ 每个分支可不酉；总通道保留总概率。
+\note{逐个对角位置检查完整性。每个输出元素是 $\sum_r B_{jr}\overline{B_{kr}}/4$。反例必须先证明抽象规则允许这个变化，才能与物理实现比较。}
+\end{frame}
+\section{精确障碍}
+\subsection{酉矩关系}
+% Manuscript: Section 2, Lemma 1
+\begin{frame}{没有能量损失，就没有向下跃迁}
+\[0=\sum_{j<k}(E_k-E_j)P_{j|k}p_k,\qquad p_k>0.\]
+ 所有项非负，所以 $P_{j|k}=0$（$j<k$）。
+ \[U(|k\rangle\otimes|a\rangle)=|k\rangle\otimes V_k|a\rangle,\quad a\in G.\]
+ $V_k$ 为 $g\times g$ 酉矩阵；相干必须满足
+ \[\tau_{jk}=\alpha_j\overline{\alpha_k}\operatorname{Tr}(V_jV_k^\dagger)/g.\]
+\note{先由能量守恒消掉输出概率的交叉项，再使用能量损失的非负和。$G$ 是环境完整基态空间。正交列留在同维空间内，因此每个块酉。引理的一般输入版本是原文书面结果。}
+\end{frame}
+% Manuscript: Section 2, Theorem 2
+\begin{frame}{两个关系，一个矛盾}
+\[V_2=aV_0+bV_1,\qquad V_3=aV_0+ibV_1,\quad(a,b)=(3/5,4/5).\]
+ 同一 Gram 矩阵传递零残差关系。
+ \[X=V_0V_1^\dagger,\qquad X+X^\dagger=0,\quad X^\dagger-X=0.\]
+ 所以 $X=0$，但 $XX^\dagger=I\ne0$。
+ \begin{block}{固定状态对的精确分离}
+ 任意有限基态空间热操作均不能把 $\rho$ 送到 $\sigma$。
+ \end{block}
+\note{展开 $\operatorname{Tr}(RR^\dagger)/g$ 即可把行向量关系传给矩阵。两个酉性等式分别消去 $X$ 的两个部分。非零环境条件确保 $I\ne0$。}
+\end{frame}
+\section{闭包与范围}
+\subsection{统一间隙}
+% Manuscript: Section 3, Lemma 3 and Corollary 4
+\begin{frame}{精确不可能，还不等于无法逼近}
+有理数不能等于 $\sqrt2$，却可以无限逼近。
+ \[D_{jk}=\operatorname{Tr}(V_jV_k^\dagger)/g,\qquad
+ \max_{jk}|D_{jk}-C_{jk}|\geq1/144.\]
+ \begin{block}{原论文推论 4（书面论证）}
+ 任意热输出 $\tau$ 满足 $\|\tau-\sigma\|_1>10^{-8}$。
+ \end{block}
+ 完整迹范数；没有额外的 $1/2$。
+\note{这个界与环境大小无关。不能仅引用上一页的精确矛盾。下一附录给出残差和能量泄漏之间的桥梁；$10^{-8}$ 没有最优性声明。}
+\end{frame}
+% Manuscript: Section 4, Corollary 10
+\begin{frame}{四是闭包分离的阈值}
+\begin{tabular}{cl}
+ 维数 & 在一般能谱假设下\\\hline
+ $1,2$ & 冷却转移可精确热实现\\
+ $3$ & 有精确分离，但仍可任意逼近\\
+ $4$ & 本例甚至不能任意逼近
+ \end{tabular}
+ \medskip
+
+ 三能级闭包：Maestro；相关矩阵分解：Dykema--Juschenko。
+ 原文 S2.10 的混合逼近结论保留。
+\note{本页要求能级及正能隙互异。三能级将归一化相关矩阵写成秩一相位矩阵混合，再调用 S2.10。四不是精确分离的最小维数。}
+\end{frame}
+% Manuscript: Section 4, Mathematical verification paragraph
+\begin{frame}{形式结论的精确范围}
+$\mathcal A$：对所有 $d,E,\rho,\sigma$，在严格有序、正能隙互异、密度矩阵及有限冷却 Kraus 假设下，都存在正维数有限环境的精确热实现。
+ \begin{bookresult}{exact-universality-refuted}
+ $\neg\mathcal A$。
+ \end{bookresult}
+ Lean 证明用四能级构造否定普遍规则。
+ 定量闭包界仍是另外的书面结果。
+\note{经过形式核验的结论为 $\neg\mathcal A$，即普遍规则不成立，其证明使用四能级反例。定理 2 更具体的陈述与定量闭包界分别作为书面结果呈现。}
+\end{frame}
+% Manuscript: Sections 1 and 4; bibliography
+\begin{frame}{意义、来源与边界}
+\begin{itemize}
+ \item 相同能级概率不等于相同的物理可实现性。
+ \item Narasimhachar--Gour (2015)：原问题。
+ \item Maestro (2026)：先前精确三能级分离及闭包。
+ \item Kümmerer；Dykema--Juschenko；Haagerup--Musat：更早矩障碍。
+ \item 任意正温度、无限浴与催化不在主结论内。
+ \end{itemize}
+\note{先前矩障碍与本稿热力学应用的贡献分开归属。原文的 S2.4、二能级和秩一结果、S2.10 均未被推翻。后续形式化应通过共享问题协调，向上游提交聚焦贡献。}
+\end{frame}
+\appendix
+\section{技术附录}
+% Manuscript: Section 3, Lemma 3
+\begin{frame}{附录：统一间隙的计算}
+\[\delta=\max|D-C|,\quad\|R_2\|_{2,g},\|R_3\|_{2,g}\leq\tfrac{12}{5}\sqrt\delta.\]
+ \[\|AA^\dagger-I\|_{2,g}\leq\tfrac{144}{25}\sqrt\delta,\quad ab=\tfrac{12}{25}.\]
+ \[\|X+X^\dagger\|_{2,g},\|X^\dagger-X\|_{2,g}\leq12\sqrt\delta.\]
+ \[1=\|X\|_{2,g}\leq12\sqrt\delta\quad\Longrightarrow\quad\delta\geq1/144.\]
+\note{归一化 Hilbert--Schmidt 范数满足 $\|V\|_{2,g}=1$。残差平方用全部 Gram 项估计，系数和是 $1+a+b=12/5$。这些估计不随 $g$ 增长。}
+\end{frame}
+% Manuscript: Section 3, Corollaries 4–5
+\begin{frame}{附录：从泄漏到迹范数}
+\[L\geq\tfrac14\sum_k\ell_k,\quad\|T_k-V_k\|_{2,g}^2\leq\ell_k.\]
+ \[\|\tau-D/4\|_1\leq2\sqrt{8L},\quad L\leq7\varepsilon/2.\]
+ \[\max|D-C|\leq4\varepsilon+16\sqrt{7\varepsilon}<1/144\]
+ 若 $\varepsilon\leq10^{-8}$，矛盾。
+
+ Gibbs 尾项 $p$：$\|\tau-\sigma\|_1>10^{-8}-2p$。
+\note{$T_k$ 是收缩块，通过奇异值补成 $V_k$。纯化后比较向量，再取偏迹。激发尾项只能给出必要条件 $p>5\cdot10^{-9}$，不是充分条件。}
+\end{frame}
+% Manuscript: Section 4, Corollaries 6–9
+\begin{frame}{附录：推广中的量词}
+\begin{itemize}
+ \item $a,b>0$, $a^2+b^2=1$, $\sin\theta\ne0$：任意全支撑输入的精确分离。
+ \item 至少四个占据的互异能级：存在闭包外输出。
+ \item 三向量问题：投影秩应为 $3/2$，矛盾。
+ \item 固定通道在最优相干通道的闭凸包外。
+ \end{itemize}
+ 参数族不附带统一 $10^{-8}$ 常数。
+\note{在相位边界 $\sin\theta=0$，第二个条件不再独立。高维推广只需能级互异。向量猜想的 v1/v2 与 v3 的充分条件要分开。}
+\end{frame}
+% Manuscript: Bibliography
+\begin{frame}{附录：原始资料}
+\small
+ \begin{itemize}
+ \item Ma--Zhang，第 3 版，第 2--4 节。
+ \item Narasimhachar--Gour (2015), S2 F；\href{https://doi.org/10.1038/ncomms8689}{10.1038/ncomms8689}.
+ \item Dykema--Juschenko, Cor. 2.8, 2.11; Thm. 3.1；\href{https://doi.org/10.7146/math.scand.a-15186}{10.7146/math.scand.a-15186}.
+ \item Haagerup--Musat, Remark 4.8(2)；\href{https://doi.org/10.1007/s00220-011-1216-y}{10.1007/s00220-011-1216-y}.
+ \item Musat--Rørdam, Prop. 3.2, Ex. 3.4；\href{https://doi.org/10.1007/s00220-019-03449-w}{10.1007/s00220-019-03449-w}.
+ \item Maestro v0.1 (2026), Letter p. 1; Supplement pp. 1--2.
+ \end{itemize}
+\note{完整书面引文与公开链接见解说最后一章。保留先前作者的原始贡献与年代。}
+\end{frame}
+% Manuscript: Mathematical verification paragraph; exact universal refutation only
+\FormalVerification
+\end{document}
