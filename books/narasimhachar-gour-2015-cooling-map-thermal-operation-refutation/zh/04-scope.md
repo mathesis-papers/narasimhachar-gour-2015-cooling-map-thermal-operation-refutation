@@ -67,8 +67,10 @@ Narasimhachar 与 Gour 在 2015 年提出状态转移等价问题。Maestro v0.1
 - M. Musat、M. Rørdam，*Non-closure of quantum correlation matrices and factorizable channels that require infinite dimensional ancilla*，[DOI 10.1007/s00220-019-03449-w](https://doi.org/10.1007/s00220-019-03449-w)，命题 3.2、例 3.4。
 - Maestro v0.1，*Minimum Bath Dimension for Qutrit Cooling Maps*，2026-08-27，[第 1.0 版全文](https://pudimphysics.org/research/RO-2026-0004/releases/v1.0/combined.pdf?download=1)，Letter 第 1 页、Supplement 第 1–2 页。
 
-<style>pre:has(> code[class*="typst"]) { display: none; }</style>
+<section hidden="hidden">
 
 ```{=typst}
 #pagebreak()
 ```
+
+</section>
