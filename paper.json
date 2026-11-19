@@ -2,16 +2,16 @@
   "files": {
     "pdf": {
       "bytes": 103012,
-      "matches_public": null,
+      "matches_public": true,
       "path": "paper.pdf",
-      "public_sha256": null,
+      "public_sha256": "3567c8c170be766be683a3af63dbfabc336094af604e1f4c285b08d060297162",
       "sha256": "3567c8c170be766be683a3af63dbfabc336094af604e1f4c285b08d060297162"
     },
     "source": {
       "bytes": 15951,
-      "matches_public": null,
+      "matches_public": true,
       "path": "source.archive",
-      "public_sha256": null,
+      "public_sha256": "60795e9521b046dba2e73d47f9ccf7764e68a01890633c724d29f9e3d9391a20",
       "sha256": "60795e9521b046dba2e73d47f9ccf7764e68a01890633c724d29f9e3d9391a20"
     }
   },
@@ -38,6 +38,8 @@
     "license": "CC-BY-4.0",
     "msc": [],
     "pdf": {
+      "bytes": 103012,
+      "sha256": "3567c8c170be766be683a3af63dbfabc336094af604e1f4c285b08d060297162",
       "url": "/api/v1/collected-papers/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/files/pdf?version=3"
     },
     "previous_version": null,
@@ -46,6 +48,8 @@
     "record": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
     "repository_name": "narasimhachar-gour-2015-cooling-map-thermal-operation-refutation",
     "source": {
+      "bytes": 15951,
+      "sha256": "60795e9521b046dba2e73d47f9ccf7764e68a01890633c724d29f9e3d9391a20",
       "url": "/api/v1/collected-papers/narasimhachar-gour-2015-cooling-map-thermal-operation-refutation/files/source?version=3"
     },
     "title": "Four-level closure separation at Narasimhachar–Gour's Conjecture 1 (Supplementary Sec. S2 F, p. S11): beyond Maestro's exact qutrit separation (2026), using Dykema–Juschenko (2009)",
