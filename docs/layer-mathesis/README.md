@@ -66,6 +66,8 @@ results require a bare DOI, original source location and a registered
 formalization-request issue as well as their nonempty proof in every edition.
 See [the release requirement and migration notes](UPSTREAM-PINS.md).
 
+[The LaTeX manuscript template](MANUSCRIPT.md) supplies shared typography for
+papers and short notes; our own short notes use it as their default reference.
 [The pipeline](PIPELINE.md) documents the mechanical publisher step and its
 agent handoff. [Project rules](PROJECT.md) are imported from root `PROJECT.md`.
 
